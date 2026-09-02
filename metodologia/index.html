@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="pl" data-astro-cid-5hce7sga> <head><meta name="robots" content="noindex,nofollow"><script>(function(){try{if(sessionStorage.getItem("sejm_gate")==="d506f1b659084d73bd3dfcdc7c0a13c45bd27c8227a7063ff606da1a431fccdd")return;}catch(e){}var p=location.pathname+location.search;location.replace("/sejm/auth.html?next="+encodeURIComponent(p));})();</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Pełna metodologia Sejm Symulatora: słowność, lojalność klubowa, ranking wpływu i zestawienie programów z głosowaniami — plus źródła danych i zasady korekt."><link rel="icon" type="image/svg+xml" href="/sejm/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/sejm/favicon-32.png"><link rel="apple-touch-icon" href="/sejm/apple-touch-icon.png"><title>Sejm Symulator — Jak to liczymy? Metodologia</title><meta property="og:site_name" content="Sejm Symulator"><meta property="og:type" content="website"><meta property="og:locale" content="pl_PL"><meta property="og:title" content="Sejm Symulator — Jak to liczymy? Metodologia"><meta property="og:description" content="Pełna metodologia Sejm Symulatora: słowność, lojalność klubowa, ranking wpływu i zestawienie programów z głosowaniami — plus źródła danych i zasady korekt."><meta property="og:image" content="https://futureshow.pl/sejm/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sejm Symulator — Jak to liczymy? Metodologia"><meta name="twitter:description" content="Pełna metodologia Sejm Symulatora: słowność, lojalność klubowa, ranking wpływu i zestawienie programów z głosowaniami — plus źródła danych i zasady korekt."><meta name="twitter:image" content="https://futureshow.pl/sejm/og-image.png"><script>
+    // Apply saved theme before paint to avoid flash.
+    // Default = light (ignore system preference); user can switch and we remember.
+    (function () {
+      try {
+        const saved = localStorage.getItem("theme");
+        const t = saved || "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script><link rel="stylesheet" href="/sejm/_astro/Base.CVICwWEg.css">
+<style>.container[data-astro-cid-mbairhp2].narrow{max-width:860px}.page-head[data-astro-cid-mbairhp2]{padding:var(--gap-xl) 0 var(--gap-md);margin-bottom:var(--gap-lg);border-bottom:1px solid var(--border)}.page-head[data-astro-cid-mbairhp2] .display-h1[data-astro-cid-mbairhp2]{margin:0 0 var(--gap-sm);font-size:clamp(34px,5vw,44px);font-weight:500}.page-head[data-astro-cid-mbairhp2] .lead[data-astro-cid-mbairhp2]{max-width:68ch}.m-sec[data-astro-cid-mbairhp2]{padding:22px 26px;margin-bottom:var(--gap-md)}.m-sec[data-astro-cid-mbairhp2] h2[data-astro-cid-mbairhp2]{margin:0 0 10px;font-size:var(--fs-xl)}.m-sec[data-astro-cid-mbairhp2] p[data-astro-cid-mbairhp2],.m-sec[data-astro-cid-mbairhp2] li[data-astro-cid-mbairhp2]{max-width:72ch;line-height:1.65}.m-sec[data-astro-cid-mbairhp2] ol[data-astro-cid-mbairhp2],.m-sec[data-astro-cid-mbairhp2] ul[data-astro-cid-mbairhp2]{padding-left:22px}.m-sec[data-astro-cid-mbairhp2] li[data-astro-cid-mbairhp2]{margin:6px 0}
+</style></head> <body data-astro-cid-5hce7sga> <header class="site-header" data-astro-cid-5hce7sga> <div class="flag-bar" aria-hidden="true" data-astro-cid-5hce7sga></div> <div class="container" data-astro-cid-5hce7sga> <a href="/sejm/" class="brand" data-astro-cid-5hce7sga> <span class="brand-mark" aria-hidden="true" data-astro-cid-5hce7sga> <span class="m-w" data-astro-cid-5hce7sga></span> <span class="m-r" data-astro-cid-5hce7sga></span> </span> <span class="brand-text" data-astro-cid-5hce7sga> <span class="brand-name" data-astro-cid-5hce7sga>Sejm <em data-astro-cid-5hce7sga>Symulator</em></span> <span class="brand-meta" data-astro-cid-5hce7sga> <span class="live-dot" aria-hidden="true" data-astro-cid-5hce7sga></span> <span data-astro-cid-5hce7sga>Kad. X · 460 + 100</span> </span> </span> </a> <button id="nav-toggle" class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav" data-astro-cid-5hce7sga> <span aria-hidden="true" data-astro-cid-5hce7sga></span> <span aria-hidden="true" data-astro-cid-5hce7sga></span> <span aria-hidden="true" data-astro-cid-5hce7sga></span> </button> <nav id="main-nav" data-astro-cid-5hce7sga> <a href="/sejm/" class data-astro-cid-5hce7sga> Start  </a><a href="/sejm/slownosc" class title="Czy posłowie głosują tak, jak mówią? Ranking zgodności słów z głosami" data-astro-cid-5hce7sga> Słowność <span class="hot-dot" aria-hidden="true" data-astro-cid-5hce7sga></span> </a><a href="/sejm/poslowie" class title="Wyszukiwarka i profile wszystkich posłów" data-astro-cid-5hce7sga> Posłowie  </a><div class="nav-group " data-astro-cid-5hce7sga> <button type="button" class="nav-group-btn" aria-expanded="false" aria-haspopup="true" data-astro-cid-5hce7sga> Głosowania <span class="caret" aria-hidden="true" data-astro-cid-5hce7sga>▾</span> </button> <div class="nav-drop" role="menu" data-astro-cid-5hce7sga> <a href="/sejm/glosowania" title="Wyniki imienne każdego głosowania" role="menuitem" class data-astro-cid-5hce7sga> Wszystkie głosowania  </a><a href="/sejm/temat" title="Głosowania pogrupowane tematycznie" role="menuitem" class data-astro-cid-5hce7sga> Tematy  </a> </div> </div><div class="nav-group " data-astro-cid-5hce7sga> <button type="button" class="nav-group-btn" aria-expanded="false" aria-haspopup="true" data-astro-cid-5hce7sga> Kluby i sojusze <span class="caret" aria-hidden="true" data-astro-cid-5hce7sga>▾</span> </button> <div class="nav-drop" role="menu" data-astro-cid-5hce7sga> <a href="/sejm/klub" title="Profile klubów i kół" role="menuitem" class data-astro-cid-5hce7sga> Kluby  </a><a href="/sejm/sojusze" title="Kto z kim faktycznie głosuje" role="menuitem" class data-astro-cid-5hce7sga> Sojusze  </a><a href="/sejm/demografia" title="Wiek, płeć i zawody posłów" role="menuitem" class data-astro-cid-5hce7sga> Demografia  </a> </div> </div><div class="nav-group " data-astro-cid-5hce7sga> <button type="button" class="nav-group-btn" aria-expanded="false" aria-haspopup="true" data-astro-cid-5hce7sga> Rankingi <span class="caret" aria-hidden="true" data-astro-cid-5hce7sga>▾</span> </button> <div class="nav-drop" role="menu" data-astro-cid-5hce7sga> <a href="/sejm/decyzyjni" title="Ranking realnego wpływu posłów" role="menuitem" class data-astro-cid-5hce7sga> Decyzyjni  </a><a href="/sejm/programy" title="Obietnice wyborcze 2023 kontra głosowania klubów" role="menuitem" class data-astro-cid-5hce7sga> Programy partii  </a> </div> </div><div class="nav-group " data-astro-cid-5hce7sga> <button type="button" class="nav-group-btn" aria-expanded="false" aria-haspopup="true" data-astro-cid-5hce7sga> Więcej <span class="caret" aria-hidden="true" data-astro-cid-5hce7sga>▾</span> </button> <div class="nav-drop" role="menu" data-astro-cid-5hce7sga> <a href="/sejm/analiza" title="Dyscyplina, buntownicy, frekwencja" role="menuitem" class data-astro-cid-5hce7sga> Analiza  </a><a href="/sejm/procesy" title="Ścieżki ustaw przez parlament" role="menuitem" class data-astro-cid-5hce7sga> Procesy legislacyjne  </a><a href="/sejm/symulator" title="Przewidywanie zachowań posłów" role="menuitem" class data-astro-cid-5hce7sga> Symulator  </a><a href="/sejm/senat" title="Izba wyższa — senatorowie i głosowania" role="menuitem" class data-astro-cid-5hce7sga> Senat  </a><a href="/sejm/moja-lista" title="Obserwowani posłowie" role="menuitem" class data-astro-cid-5hce7sga> Moja lista <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var C=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var l=(i,o,a)=>C(i,typeof o!="symbol"?o+"":o,a);var E=new Set(["__proto__","constructor","prototype"]);{let i={0:t=>y(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>Number.POSITIVE_INFINITY*t},o=t=>{let[h,e]=t;return h in i?i[h](e):void 0},a=t=>t.map(o),y=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([h,e])=>[h,o(e)]));class f extends HTMLElement{constructor(){super(...arguments);l(this,"Component");l(this,"hydrator");l(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},p=this.querySelectorAll("template[data-astro-template]");for(let r of p){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let u;try{u=this.hasAttribute("props")?y(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let d;await this.hydrator(this)(this.Component,u,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});l(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[p,{default:u}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),d=this.getAttribute("component-export")||"default";if(d.includes(".")){this.Component=p;for(let m of d.split(".")){if(E.has(m)||!this.Component||typeof this.Component!="object"&&typeof this.Component!="function"||!Object.hasOwn(this.Component,m))throw new Error(`Invalid component export path: ${d}`);this.Component=this.Component[m]}}else{if(E.has(d))throw new Error(`Invalid component export path: ${d}`);this.Component=p[d]}return this.hydrator=u,this.hydrate},e,this)}catch(n){console.error("[astro-island] Error hydrating %s",this.getAttribute("component-url"),n)}}attributeChangedCallback(){this.hydrate()}}l(f,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",f)}})();</script><astro-island uid="ZzhNQL" prefix="r1" component-url="/sejm/_astro/WatchlistCounter.kRj4TTqP.js" component-export="default" renderer-url="/sejm/_astro/client.mxV3x1Xx.js" props="{&quot;data-astro-cid-5hce7sga&quot;:[0,true]}" ssr client="load" opts="{&quot;name&quot;:&quot;WatchlistCounter&quot;,&quot;value&quot;:true}"></astro-island> </a> </div> </div> <button id="theme-toggle" class="theme-btn" type="button" aria-label="Przełącz tryb" data-astro-cid-5hce7sga> <span class="ic-sun" data-astro-cid-5hce7sga>☀</span> <span class="ic-moon" data-astro-cid-5hce7sga>☾</span> </button> </nav> </div> </header> <main data-astro-cid-5hce7sga>  <div class="container narrow" data-astro-cid-mbairhp2> <header class="page-head" data-astro-cid-mbairhp2> <span class="kicker" data-astro-cid-mbairhp2>Metodologia · źródła · korekty</span> <h1 class="display-h1" data-astro-cid-mbairhp2>Jak to liczymy?</h1> <p class="muted lead" data-astro-cid-mbairhp2>
+Każdy wynik w serwisie da się prześledzić od danych źródłowych do liczby na ekranie.
+        Ta strona zbiera zasady wszystkich wskaźników w jednym miejscu; szczegółowe opisy
+        znajdziesz też przy samych wynikach.
+</p> </header> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Źródła danych</h2> <p data-astro-cid-mbairhp2>
+Korzystamy wyłącznie z danych <strong data-astro-cid-mbairhp2>oficjalnych i pierwotnych</strong>:
+</p> <ol data-astro-cid-mbairhp2> <li data-astro-cid-mbairhp2><strong data-astro-cid-mbairhp2>Stenogramy Sejmu</strong> — pełne transkrypcje wypowiedzi z mównicy (api.sejm.gov.pl),</li> <li data-astro-cid-mbairhp2><strong data-astro-cid-mbairhp2>Imienne wyniki głosowań</strong> — z tego samego oficjalnego API,</li> <li data-astro-cid-mbairhp2><strong data-astro-cid-mbairhp2>Programy wyborcze partii z 2023 r.</strong> — oryginalne dokumenty komitetów (oficjalne PDF-y i strony, w razie potrzeby kopie archiwalne),</li> <li data-astro-cid-mbairhp2><strong data-astro-cid-mbairhp2>Otwarte dane Senatu</strong> — dla części senackiej.</li> </ol> <p class="muted small" data-astro-cid-mbairhp2>Nie opieramy wyników na omówieniach prasowych ani relacjach z drugiej ręki.
+      Dane sejmowe odświeżamy po posiedzeniach; przy każdym module podana jest data aktualizacji.</p> </section> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Słowność</h2> <p data-astro-cid-mbairhp2>
+Zestawiamy <strong data-astro-cid-mbairhp2>kierunkowe deklaracje z mównicy</strong> („jestem za / przeciw" w konkretnej sprawie)
+        z <strong data-astro-cid-mbairhp2>faktycznym głosem tego samego posła</strong> nad tą sprawą. Model językowy wykrywa stanowiska
+        w wypowiedziach i musi udowodnić każde dosłownym cytatem; cytat jest porównywany
+<strong data-astro-cid-mbairhp2>znak w znak</strong> ze stenogramem — niezgodny odpada. Deklarację łączymy z jednym
+        rozstrzygającym głosowaniem (mapa druków sejmowych, dopasowanie tematyczne ±30 dni; poprawki wykluczone;
+        odwrócona polaryzacja dla głosowań „o odrzucenie"). Liczymy <strong data-astro-cid-mbairhp2>jedną parę na posła i głosowanie</strong>;
+        próbka rozjazdów przechodzi dodatkowo niezależną kontrolę polskiego modelu Bielik 11B.
+</p> <p data-astro-cid-mbairhp2><a href="/sejm/slownosc#metodologia" data-astro-cid-mbairhp2>Pełna metodologia i ograniczenia słowności →</a></p> </section> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Lojalność klubowa</h2> <p data-astro-cid-mbairhp2>
+Dla każdego głosowania wyznaczamy <strong data-astro-cid-mbairhp2>głos większości klubu</strong> (spośród głosów ZA/PRZECIW/WSTRZYMAŁ SIĘ).
+        Lojalność posła to odsetek głosowań, w których jego głos pokrywa się z większością własnego klubu,
+        liczony na wszystkich głosowaniach z oddanym głosem. Nieobecności nie obniżają lojalności —
+        obniżają frekwencję, pokazywaną osobno. Wynik ma charakter opisowy: niska lojalność może oznaczać
+        zarówno niezależność, jak i konflikt w klubie.
+</p> </section> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Decyzyjni — ranking wpływu</h2> <p data-astro-cid-mbairhp2>
+Autorski, <strong data-astro-cid-mbairhp2>jawnie punktowy</strong> wskaźnik: sumujemy sygnały z kilku wymiarów —
+        wykrytych stanowisk politycznych, niezależności od klubu, bycia „first-moverem" w zmianach linii
+        głosowania, aktywności retorycznej (wystąpienia i rola sprawozdawcy) oraz doświadczenia
+        parlamentarnego. Progi punktowe dzielą posłów na cztery poziomy. To przybliżenie realnego wpływu,
+        nie jego pełny pomiar — skład wskaźnika jest opisany przy rankingu, a każdy komponent można
+        zweryfikować w danych posła.
+</p> <p data-astro-cid-mbairhp2><a href="/sejm/decyzyjni" data-astro-cid-mbairhp2>Ranking z opisem komponentów →</a></p> </section> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Programy partii</h2> <p data-astro-cid-mbairhp2>
+Obietnice z programów 2023 (lista zweryfikowana w dokumentach pierwotnych) dopasowujemy do głosowań
+        silnikiem podobieństwa tekstowego, a następnie sprawdzamy <strong data-astro-cid-mbairhp2>głos większości klubu</strong>
+w każdym dopasowanym głosowaniu. Status „zgodnie" wymaga co najmniej dwóch sygnałów i ⅔ zgodności;
+        poprawki są wyłączone, głosowania „o odrzucenie" mają odwróconą polaryzację. „Brak głosowań"
+        to informacja, nie zarzut — Sejm nie głosuje nad obietnicami opozycji.
+</p> <p data-astro-cid-mbairhp2><a href="/sejm/programy#metodologia-programy" data-astro-cid-mbairhp2>Pełna metodologia programów →</a></p> </section> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Czego wyniki nie mówią</h2> <ul data-astro-cid-mbairhp2> <li data-astro-cid-mbairhp2>Nie oceniamy <strong data-astro-cid-mbairhp2>prawdziwości</strong> wypowiedzi — wyłącznie spójność słowa z głosem.</li> <li data-astro-cid-mbairhp2>Rozjazd nie zawsze oznacza złamanie słowa: projekt mógł zmienić brzmienie między wypowiedzią
+            a głosowaniem, kontekst mógł być proceduralny, a dopasowanie — omylne.</li> <li data-astro-cid-mbairhp2>Wyniki przy małej liczbie obserwacji (oznaczane „mała próba") są niestabilne
+            i nieporównywalne z wynikami przy dużej próbie.</li> <li data-astro-cid-mbairhp2>Wskaźniki opisują <strong data-astro-cid-mbairhp2>zachowania w analizowanych przypadkach</strong>,
+            nie całą działalność parlamentarzysty.</li> </ul> </section> <section class="card elevated m-sec" data-astro-cid-mbairhp2> <h2 data-astro-cid-mbairhp2>Korekty i zgłoszenia</h2> <p data-astro-cid-mbairhp2>
+Przy każdej parze słowo↔głos działa przycisk „zgłoś błąd lub brakujący kontekst".
+        Zgłoszenie uruchamia audyt danego przypadku — sprawdzenie cytatu, dopasowania i kontekstu.
+        Potwierdzone błędy poprawiamy w danych źródłowych; nie usuwamy wyników dlatego, że są niewygodne.
+</p> <p class="muted small" data-astro-cid-mbairhp2>Kontakt: przyluskijan@gmail.com · dane słowności zaktualizowano 2026-08-28</p> </section> </div>  </main> <footer class="site-footer" data-astro-cid-5hce7sga> <div class="container" data-astro-cid-5hce7sga> <p class="tiny footer-brand" data-astro-cid-5hce7sga> <strong data-astro-cid-5hce7sga>Sejm Symulator</strong> · projekt <a href="https://futureshow.pl" target="_blank" rel="noopener" data-astro-cid-5hce7sga>FutureShow</a> / <a href="https://matryca.tech" target="_blank" rel="noopener" data-astro-cid-5hce7sga>Matryca</a> · autor i metodologia: Jan Lubicz-Przyłuski
+</p> <p class="tiny faint" data-astro-cid-5hce7sga>
+Dane: <a href="https://api.sejm.gov.pl/sejm/openapi/" target="_blank" rel="noopener" data-astro-cid-5hce7sga>api.sejm.gov.pl</a>
++ <a href="https://www.senat.gov.pl/gfx/senat/glosowania_wyniki/senat.xml" target="_blank" rel="noopener" data-astro-cid-5hce7sga>otwarte dane Senatu</a> ·
+        kadencja 10 Sejmu (od 13.11.2023) · XI Senatu ·
+        projekt eksperymentalny z linii „Humanist Tech" ·
+<a href="/sejm/metodologia/" data-astro-cid-5hce7sga>Jak to liczymy? — metodologia</a> </p> <p class="tiny faint footer-author" data-astro-cid-5hce7sga>
+Jan Lubicz-Przyłuski — mediator, menedżer NGO, reżyser i historyk sztuki.
+        Koncepcja, metodologia, oprogramowanie i kuracja danych: autor.
+</p> <p class="tiny faint footer-legal" data-astro-cid-5hce7sga>
+© 2026 Jan Lubicz-Przyłuski. Wszelkie prawa zastrzeżone. Koncepcja, kod, metodologia i teksty
+        stanowią utwór chroniony prawem autorskim, a zbiór danych — bazę chronioną prawem sui generis
+        (dyrektywa 96/9/WE). Kopiowanie, modyfikacja i rozpowszechnianie bez pisemnej zgody autora są zabronione.
+        Pierwszeństwo projektu poświadczone znacznikiem czasu OpenTimestamps zakotwiczonym w blockchainie Bitcoina (27.08.2026).
+        Dane źródłowe Sejmu i Senatu pozostają informacją publiczną.
+</p> <p class="tiny faint" data-astro-cid-5hce7sga>
+Statystyki odwiedzin: <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener" data-astro-cid-5hce7sga>GoatCounter</a>
+— bez plików cookie i bez profilowania. Narzędzie rejestruje wyłącznie dane techniczne odsłony
+          (adres odwiedzanej podstrony — także profili posłów — stronę odsyłającą, typ przeglądarki i systemu,
+          kraj oraz rozmiar ekranu), przechowywane na serwerach w UE i nieprzekazywane poza EOG.
+          Nie identyfikujemy osób; dlatego ta witryna nie wyświetla banera zgody.
+</p> </div> </footer> <script>
+    document.addEventListener("click", (e) => {
+      const t = e.target.closest("#theme-toggle");
+      if (!t) return;
+      const cur = document.documentElement.getAttribute("data-theme");
+      const next = cur === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+
+    // Dropdowny nawigacji (desktop): klik otwiera, klik poza / Escape zamyka.
+    (function () {
+      const groups = Array.from(document.querySelectorAll(".nav-group"));
+      function closeAll(except) {
+        for (const g of groups) {
+          if (g === except) continue;
+          g.classList.remove("open");
+          g.querySelector(".nav-group-btn")?.setAttribute("aria-expanded", "false");
+        }
+      }
+      groups.forEach((g) => {
+        const btn = g.querySelector(".nav-group-btn");
+        btn?.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const open = !g.classList.contains("open");
+          closeAll(g);
+          g.classList.toggle("open", open);
+          btn.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+      });
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".nav-group")) closeAll(null);
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeAll(null);
+      });
+    })();
+
+    // Menu mobilne
+    (function () {
+      const burger = document.getElementById("nav-toggle");
+      const nav = document.getElementById("main-nav");
+      if (!burger || !nav) return;
+
+      function setOpen(open) {
+        nav.classList.toggle("open", open);
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+      }
+
+      burger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        setOpen(!nav.classList.contains("open"));
+      });
+
+      // Klik w link zamyka menu; klik w przełącznik motywu nie.
+      nav.addEventListener("click", (e) => {
+        if (e.target.closest("a")) setOpen(false);
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!nav.classList.contains("open")) return;
+        if (!e.target.closest("#main-nav") && !e.target.closest("#nav-toggle")) setOpen(false);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setOpen(false);
+      });
+
+      // Powrót do szerokiego ekranu — czyścimy stan panelu.
+      window.matchMedia("(min-width: 901px)").addEventListener("change", (m) => {
+        if (m.matches) setOpen(false);
+      });
+    })();
+  </script> <script data-goatcounter="https://sejm-symulator.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> </body> </html>
